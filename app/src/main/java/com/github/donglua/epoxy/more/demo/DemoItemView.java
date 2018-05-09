@@ -1,6 +1,5 @@
 package com.github.donglua.epoxy.more.demo;
 
-import android.content.Context;
 import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.TextView;
