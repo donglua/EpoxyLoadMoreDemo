@@ -7,7 +7,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 
 public abstract class LoadMoreRecyclerViewScrollListener extends EndlessRecyclerViewScrollListener implements LoadMoreListener {
 
-    private boolean isHasMoreToLoad = true;
+    private boolean hasMoreToLoad = true;
 
     public LoadMoreRecyclerViewScrollListener(LinearLayoutManager layoutManager) {
         super(layoutManager);
@@ -30,10 +30,10 @@ public abstract class LoadMoreRecyclerViewScrollListener extends EndlessRecycler
 
     @Override
     public boolean hasMoreToLoad() {
-        return isHasMoreToLoad;
+        return hasMoreToLoad;
     }
 
     public void setHasMoreToLoad(boolean hasMore) {
-        isHasMoreToLoad = hasMore;
+        hasMoreToLoad = hasMore;
     }
 }

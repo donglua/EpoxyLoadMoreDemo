@@ -10,16 +10,16 @@ import com.airbnb.epoxy.EpoxyModelClass;
 import com.airbnb.epoxy.EpoxyModelWithHolder;
 
 @EpoxyModelClass(layout = R.layout.item_text)
-public abstract class DemoItemView extends EpoxyModelWithHolder<DemoItemView.ImageButtonHolder> {
+public abstract class DemoItemView extends EpoxyModelWithHolder<DemoItemView.TextItemHolder> {
 
     @EpoxyAttribute String text;
 
     @Override
-    public void bind(@NonNull ImageButtonHolder holder) {
+    public void bind(@NonNull TextItemHolder holder) {
         holder.textView.setText(text);
     }
 
-    static class ImageButtonHolder extends EpoxyHolder {
+    static class TextItemHolder extends EpoxyHolder {
         TextView textView;
         @Override
         protected void bindView(View itemView) {
